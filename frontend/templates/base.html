@@ -3,6 +3,28 @@
 <head>
     <meta harset="UTF-8">
     <title>TrafficDump</title>
-    {% include 'html_dependencies.jinja2' %}
+    {% include 'html_dependencies.html' %}
 
 </head>
+
+<body>
+<nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo right">Logo</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="#">Toturial</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="content container">
+    {% block content %}
+
+    {% endblock %}
+</div>
+
+</body>
+</html>
