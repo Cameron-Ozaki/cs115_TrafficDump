@@ -1,15 +1,16 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-import os
-from django.template import Template, Context
 
-
-# TEMPLATE_DIRS = (
-#     os.path.join(SETTINGS_PATH, 'templates'),
-# )
-
+from django.template import loader
 
 # Create your views here.
 def index(request):
-    t = "server/templates/home.html"
-    return render(request, t)
+    return render(request, 'home/index.html')
+
+def about(request):
+    return render(request, 'home/about/about.html')
+
+def locations(request):
+    return render(request, 'home/locations/locations.html')
+
+def se_library(request):
+    return render(request, 'home/locations/s_e_library.html')
