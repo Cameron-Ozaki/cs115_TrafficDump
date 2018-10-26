@@ -6,6 +6,9 @@ from django.template import loader
 def index(request):
     return render(request, 'home/index.html')
 
+def about(request):
+    return render(request, 'home/about/about.html')
+
 def locations(request):
     return render(request, 'home/locations/locations.html')
 
