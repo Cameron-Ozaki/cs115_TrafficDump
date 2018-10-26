@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta harset="UTF-8">
+    <title>TrafficDump</title>
+    {% include './html_dependencies.html' %}
+
+</head>
+
+<body>
+<nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo right">Logo</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="/">Home</a></li>
+            <li><a href="#">Tutorial</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="content container">
+    {% block content %}
+
+    {% endblock %}
+</div>
+
+</body>
+<footer class="page-footer">
+    <div class="footer-copyright">
+        <div class="container">
+            © 2018 TrafficDump
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+    </div>
+</footer>
+</html>
