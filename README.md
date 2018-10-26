@@ -1,2 +1,2 @@
 # TrafficDump
-CS 115 Project Repository
+CMPS 115 Project Repository
