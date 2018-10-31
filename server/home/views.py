@@ -3,6 +3,9 @@ from django.shortcuts import render
 from django.template import loader
 
 # Create your views here.
+def handler404(request):
+    return render(request, '404.html', status=404)
+
 def index(request):
     return render(request, 'home/index.html')
 
