@@ -12,5 +12,8 @@ def about(request):
 def locations(request):
     return render(request, 'home/locations/locations.html')
 
-def se_library(request):
-    return render(request, 'home/locations/s_e_library.html')
+def se_library_upper(request):
+    return render(request, 'home/locations/s_e_library_up_floor.html')
+
+def se_library_main(request):
+    return render(request, 'home/locations/s_e_library_main.html')
