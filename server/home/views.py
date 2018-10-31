@@ -17,3 +17,6 @@ def se_library_upper(request):
 
 def se_library_main(request):
     return render(request, 'home/locations/s_e_library_main.html')
+
+def se_library_lower(request):
+    return render(request, 'home/locations/s_e_library_lower.html')
