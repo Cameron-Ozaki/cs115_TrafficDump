@@ -42,7 +42,6 @@ class Main extends Component {
             </div>
         </nav>
 
-
         </body>
 
         <footer class="page-footer">
@@ -54,7 +53,7 @@ class Main extends Component {
             </div>
         </footer>
 
-        
+
         </div>
         </HashRouter>
     );
