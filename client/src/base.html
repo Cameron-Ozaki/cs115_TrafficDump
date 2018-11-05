@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta harset="UTF-8">
+    <title>TrafficDump</title>
+    {% include './html_dependencies.html' %}
+
+</head>
+
+<body>
+<nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo right">Logo</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><NavLink to="/">Home</NavLink></li>
+            <li><NavLink to="#">Tutorial</NavLink></li>
+            <li><NavLink to="#">Documentation</NavLink></li>
+            <li><NavLink to="/about">About</NavLink></li>
+        </ul>
+        <div className="content">
+          <Route exact path="/" component={Home}/>
+          <Route path="/about" component={About}/>
+        </div>
+    </div>
+</nav>
+
+<!-- not included in main.js -->
+<div class="content container">
+    {% block content %}
+
+    {% endblock %}
+</div>
+
+</body>
+<footer class="page-footer">
+    <div class="footer-copyright">
+        <div class="container">
+            © 2018 TrafficDump
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+    </div>
+</footer>
+</html>
