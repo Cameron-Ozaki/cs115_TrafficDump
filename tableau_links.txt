@@ -1,0 +1,9 @@
+tableau_links.txt
+
+This file has links to the Tableau visualizations that are currently published. The embedded code for each can be found by clicking on the "Share" button on the lower right corner.
+
+AP_location_S&E
+https://public.tableau.com/views/AP_location_SE/SELower?:embed=y&:display_count=yes&publish=yes
+
+test visualization
+https://public.tableau.com/views/TestVisualizations_1/Summary?:embed=y&:display_count=yes
