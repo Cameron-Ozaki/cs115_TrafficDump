@@ -1,50 +1,30 @@
 import React, { Component } from "react";
-import {
-    Route,
-    NavLink,
-    HashRouter
-} from "react-router-dom";
 
-import Maps from './Maps'; 
 class Main extends Component {
+  render_se_lower() {
+    return (
+      <div>
+          <ul class="pagination">
+              <li class="waves-effect"><a href="./2"><i class="material-icons">chevron_left</i></a></li>
+              <li class="waves-effect"><a href="#!">1</a></li>
+              <li class="waves-effect"><a href="./2">2</a></li>
+              <li class="active"><a href="#!">3</a></li>
+              <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+          </ul>
+      </div>
+    );
+
+  }
   render() {
+    const selower = this.render_se_lower();
     return (
 
-
-        <nav>
-            <div class="nav-wrapper">
-
-                <ul id="nav-mobile" class="left hide-on-med-and-down">
-                    <li><NavLink to="/maps/s_e_library_lower">All Locations</NavLink></li>
-                    <li><NavLink to="maps">Quick overview</NavLink></li>
-                    <li><NavLink to="/about">About</NavLink></li>
-                </ul>
-                <div className="content">
-                  <Route exact path="/" component={Home}/>
-                  <Route exact path="/maps" component={Maps}/>
-                  <Route path="/about" component={About}/>
-                </div>
-            </div>
-        </nav>
-
-<div class="row" style="
-    padding-top: 25px;">
-    <div class=" col-3" style="
-    padding-right: 12px;">
-        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <a class="nav-link active" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
-               aria-controls="v-pills-profile" aria-selected="false">All Locations</a>
-            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="./locations/selibrary/1" role="tab"
-               aria-controls="v-pills-messages" aria-selected="false">S&E Library</a>
-            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
-               aria-controls="v-pills-messages" aria-selected="false">McHenry Library</a>
-        </div>
-    </div>
+<div class="row">
     <div class="col-9">
         <div class="tab-content" id="v-pills-tabContent">
 
             <div class="collection">
-                <a href="./locations/selibrary/1" class="collection-item">S&E Library</a>
+                <a href={selower} class="collection-item">S&E Library</a>
                 <a href="#!" class="collection-item">Other Location</a>
                 <a href="#!" class="collection-item">Other Location</a>
                 <a href="#!" class="collection-item">Other Location</a>
@@ -60,7 +40,6 @@ class Main extends Component {
             ...
         </div>
     </div>
-</div>
 </div>
 
     );
