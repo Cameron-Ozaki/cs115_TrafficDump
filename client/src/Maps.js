@@ -1,46 +1,38 @@
 import React, { Component } from "react";
+import {
+    Route,
+    NavLink,
+    HashRouter
+} from "react-router-dom";
+
+import Se_library  from "./Se_library";
+import Mc_library  from "./Mc_library";
 
 class Main extends Component {
-  render_se_lower() {
-    return (
-      <div>
-          <ul class="pagination">
-              <li class="waves-effect"><a href="./2"><i class="material-icons">chevron_left</i></a></li>
-              <li class="waves-effect"><a href="#!">1</a></li>
-              <li class="waves-effect"><a href="./2">2</a></li>
-              <li class="active"><a href="#!">3</a></li>
-              <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-          </ul>
-      </div>
-    );
 
-  }
   render() {
-    const selower = this.render_se_lower();
+
     return (
+      <HashRouter>
+        <div>
+          <nav>
+              <div class="nav-wrapper">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                   aria-controls="v-pills-profile" aria-selected="false"><NavLink to="/maps/selibrary">S&E Library</NavLink></a>
 
-<div class="row">
-    <div class="col-9">
-        <div class="tab-content" id="v-pills-tabContent">
+                   <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="./locations/selibrary/1" role="tab"
+                      aria-controls="v-pills-messages" aria-selected="false"><NavLink to="/maps/mchenrylibrary">McHenry Library</NavLink></a>
+                </div>
 
-            <div class="collection">
-                <a href={selower} class="collection-item">S&E Library</a>
-                <a href="#!" class="collection-item">Other Location</a>
-                <a href="#!" class="collection-item">Other Location</a>
-                <a href="#!" class="collection-item">Other Location</a>
-            </div>
-
+                  <div className="content">
+                    <Route exact path="/selibrary" component={Se_library}/>
+                    <Route exact path="/mchenrylibrary" component={Mc_library}/>
+                  </div>
+              </div>
+          </nav>
         </div>
-        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...
-        </div>
-        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-            ...
-        </div>
-        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-            ...
-        </div>
-    </div>
-</div>
+      </HashRouter>
 
     );
   }
