@@ -13,26 +13,27 @@ class Main extends Component {
   render() {
 
     return (
+      <body>
+
       <HashRouter>
         <div>
           <nav>
-              <div class="nav-wrapper">
-                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <a class="nav-link active" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
-                   aria-controls="v-pills-profile" aria-selected="false"><NavLink to="/maps/selibrary">S&E Library</NavLink></a>
-
-                   <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="./locations/selibrary/1" role="tab"
-                      aria-controls="v-pills-messages" aria-selected="false"><NavLink to="/maps/mchenrylibrary">McHenry Library</NavLink></a>
-                </div>
+              <div class="vertical-menu">
+                  <ul style={{liststyletype: "none", margin: "0", padding: "0"}} >
+                      <li><NavLink to="/maps/selibrary">S&E Library</NavLink></li>
+                      <li><NavLink to="/maps/mchenrylibrary">McHenry Library</NavLink></li>
+                  </ul>
 
                   <div className="content">
-                    <Route exact path="/selibrary" component={Se_library}/>
-                    <Route exact path="/mchenrylibrary" component={Mc_library}/>
+                    <Route exact path="/maps/selibrary" component={Se_library}/>
+                    <Route exact path="/maps/mchenrylibrary" component={Mc_library}/>
                   </div>
               </div>
           </nav>
         </div>
       </HashRouter>
+      </body>
+
 
     );
   }
