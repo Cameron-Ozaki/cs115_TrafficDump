@@ -1,0 +1,106 @@
+{% extends "../base.html" %}
+{% block content %}
+
+<div xmlns:margin="http://www.w3.org/1999/xhtml">
+    <div class="row" style="
+    padding-top: 25px;">
+        <div class=" col-3" style="
+    padding-right: 12px;">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="/" role="tab"
+                   aria-controls="v-pills-home" aria-selected="true">Home</a>
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                   aria-controls="v-pills-profile" aria-selected="false">All Locations</a>
+                <a class="nav-link active" id="v-pills-messages-tab" data-toggle="pill" href="./1" role="tab"
+                   aria-controls="v-pills-messages" aria-selected="false">S&E Library</a>
+                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+                   aria-controls="v-pills-messages" aria-selected="false">McHenry Library</a>
+            </div>
+        </div>
+        <div class="col-9">
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                     aria-labelledby="v-pills-home-tab">
+                    <div class='tableauPlaceholder' id='viz1541377348957' style='position: automatic'>
+                        <noscript><a href='#'><img alt=' '
+                                                   src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;AP&#47;AP_location_SE&#47;SEMain&#47;1_rss.png'
+                                                   style='border: none'/></a></noscript>
+                        <object class='tableauViz' style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F'/>
+                            <param name='embed_code_version' value='3'/>
+                            <param name='site_root' value=''/>
+                            <param name='name' value='AP_location_SE&#47;SEMain'/>
+                            <param name='tabs' value='no'/>
+                            <param name='toolbar' value='yes'/>
+                            <param name='static_image'
+                                   value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;AP&#47;AP_location_SE&#47;SEMain&#47;1.png'/>
+                            <param name='animate_transition' value='yes'/>
+                            <param name='display_static_image' value='yes'/>
+                            <param name='display_spinner' value='yes'/>
+                            <param name='display_overlay' value='yes'/>
+                            <param name='display_count' value='yes'/>
+                            <param name='filter' value='publish=yes'/>
+                        </object>
+                    </div>
+                    <script type='text/javascript'>                    var divElement = document.getElementById('viz1541377348957');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    vizElement.style.width = '1000px';
+                    vizElement.style.height = '827px';
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+                <div>
+                    <div class='tableauPlaceholder' id='viz1541377432353' style='position: automatic'>
+                        <noscript><a href='#'><img alt=' '
+                                                   src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Te&#47;TestVisualizations_1&#47;Summary&#47;1_rss.png'
+                                                   style='border: none'/></a></noscript>
+                        <object class='tableauViz' style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F'/>
+                            <param name='embed_code_version' value='3'/>
+                            <param name='site_root' value=''/>
+                            <param name='name' value='TestVisualizations_1&#47;Summary'/>
+                            <param name='tabs' value='no'/>
+                            <param name='toolbar' value='yes'/>
+                            <param name='static_image'
+                                   value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Te&#47;TestVisualizations_1&#47;Summary&#47;1.png'/>
+                            <param name='animate_transition' value='yes'/>
+                            <param name='display_static_image' value='yes'/>
+                            <param name='display_spinner' value='yes'/>
+                            <param name='display_overlay' value='yes'/>
+                            <param name='display_count' value='yes'/>
+                            <param name='filter' value='publish=yes'/>
+                        </object>
+                    </div>
+                    <script type='text/javascript'>                    var divElement = document.getElementById('viz1541377432353');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    vizElement.style.width = '1000px';
+                    vizElement.style.height = '1027px';
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    ...
+                </div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                    ...
+                </div>
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                    ...
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <ul class="pagination">
+        <li class="waves-effect"><a href="./1"><i class="material-icons">chevron_left</i></a></li>
+        <li class="waves-effect"><a href="./1">1</a></li>
+        <li class="active"><a href="./2">2</a></li>
+        <li class="waves-effect"><a href="./3">3</a></li>
+        <li class="waves-effect"><a href="./3"><i class="material-icons">chevron_right</i></a></li>
+    </ul>
+</div>
+
+{% endblock %}
