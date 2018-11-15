@@ -6,12 +6,18 @@ import {
 } from "react-router-dom";
 
 import Home  from "./Home";
-import Maps  from "./Maps";
+//import Maps  from "./Maps";
 import About from "./About";
-
+import Se_library  from "./Se_library";
+import Mc_library  from "./Mc_library";
 
 class Main extends Component {
   render() {
+    const dropbtn = {backgroundcolor: "#4CAF50", color: "white", padding: "16px", fontsize: "16px", border: "none"};
+    const dropdown = {position: "relative", display: "inline-block"};
+    const dropdowncontent = {display: "none", position: "absolute", color: "black", backgroundcolor: "#f1f1f1",minwidth: "160px",boxshadow: "0px 8px 16px 0px rgba(0,0,0,0.2)",  zindex: "1" };
+    const ul = {liststyletype: "none", margin: "0", padding: "0"};
+    const li ={display: "block", width: "60px", backgroundcolor: "#dddddd"};
     return (
 
         <HashRouter>
@@ -32,13 +38,28 @@ class Main extends Component {
 
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
                     <li><NavLink to="/">Home</NavLink></li>
-                    <li><NavLink to="/maps">Maps</NavLink></li>
+                    <li>
+                        <div class={dropdown}>
+                          <button class={dropbtn}>Maps</button>
+                          <div class={dropdowncontent}>
+                          <ul class={ul}>
+                             <li class={li}><NavLink to="/maps/selibrary">S&E Library</NavLink></li>
+
+                             <li class={li}><NavLink to="/maps/mchenrylibrary">McHenry Library</NavLink></li>
+                          </ul>
+                          </div>
+                        </div>
+
+                    </li>
                     <li><NavLink to="#">Quick overview</NavLink></li>
                     <li><NavLink to="/about">About</NavLink></li>
                 </ul>
                 <div className="content">
                   <Route exact path="/" component={Home}/>
-                  <Route exact path="/maps" component={Maps}/>
+
+                  <Route exact path="/maps/selibrary" component={Se_library}/>
+                  <Route exact path="/maps/mchenrylibrary" component={Mc_library}/>
+
                   <Route path="/about" component={About}/>
                 </div>
             </div>
