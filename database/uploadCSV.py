@@ -18,7 +18,7 @@ with open('AP location McHenry 3.csv') as csvDataFile:
     for row in readCSV:
 
         if(rowNumber > 0):
-            ap_id = int(row[0])
+            ap_id = row[0]
             x = row[1]
             y = row[2]
 
