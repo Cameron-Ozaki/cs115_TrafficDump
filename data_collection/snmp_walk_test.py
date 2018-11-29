@@ -14,9 +14,9 @@ for (errorIndication,
      errorIndex,
      varBinds) in nextCmd(SnmpEngine(),
                           CommunityData('public'), #SNMP v2c, no encryption/auth
-                          UdpTransportTarget(('', 161)), # insert ip or dns of host
+                          UdpTransportTarget(('noc-dmz-wlc.ucsc.edu', 161)), # insert ip or dns of host
                           ContextData(),
-                          ObjectType(ObjectIdentity(''))): #enter object ID of data needed
+                          ObjectType(ObjectIdentity('SNMPv2-MIB'))): #enter object ID of data needed
 
     if errorIndication:
         print(errorIndication)
