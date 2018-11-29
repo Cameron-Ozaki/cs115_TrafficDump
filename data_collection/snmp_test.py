@@ -42,7 +42,7 @@ def get_snmp_proc(): # gets information from device of interest
 
 
 
-#need function that splits returned value and keeps the int value of the OID returned
+# splits returned value and keeps the int value of the OID returned
 def var_string_slice(var_list):
     for x in var_list:
         x_slice = x.split()
