@@ -5,7 +5,8 @@ import {
     HashRouter
 } from "react-router-dom";
 
-import Home from "./Home";
+import Home  from "./Home";
+import Maps  from "./Maps";
 import About from "./About";
 
 
@@ -31,12 +32,13 @@ class Main extends Component {
 
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
                     <li><NavLink to="/">Home</NavLink></li>
-                    <li><NavLink to="#">Tutorial</NavLink></li>
-                    <li><NavLink to="#">Documentation</NavLink></li>
+                    <li><NavLink to="/maps">Maps</NavLink></li>
+                    <li><NavLink to="#">Quick overview</NavLink></li>
                     <li><NavLink to="/about">About</NavLink></li>
                 </ul>
                 <div className="content">
                   <Route exact path="/" component={Home}/>
+                  <Route exact path="/maps" component={Maps}/>
                   <Route path="/about" component={About}/>
                 </div>
             </div>
