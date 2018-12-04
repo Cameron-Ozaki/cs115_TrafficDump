@@ -1,0 +1,52 @@
+TRAFFIC DUMP CLIENT TIMELINE AND SUMMARY
+
+The purpose of this file is to document all the meetings recorded with clients
+that took part of the development of the TRAFFIC DUMP project. To make this possible,
+I had got into contact with the ITS Network Operations department so they could help
+provide the hardware and credentials necessary to collect the data needed. TRAFFIC 
+DUMP requires the access of Wireless Access Points on public academic buildings to 
+pull data and produce metrics and data visualization. These WAP's are owned by the 
+ITS department so our team had to set up meetings and discuss possible solutions
+to have us obtain access to such data.
+
+10/16/18
+
+Contacted the Network Manager for the department. Set up meeting with him to present our
+project idea. Meeting was set up for 10/17/18.
+
+10/17/18
+
+Team sat down with Shiven and presented our project to him and our objective. He agreed to 
+help with our project and gave us contact information for other members the proposed project
+must be reviewd by to get approved.
+
+10/19/18
+
+Contacted Senior Network Analyst of the department. Set up a meeting with him and one other to
+discuss how we would be able to obtain access to the WAP's on campus. Meeting was set up for
+11/7/18 due to one of them being out of town. 
+
+11/7/18
+
+Meet up with Network analysts in the department and discussed the limitations of what we
+will be able to accomplish. Security concerns were raised due to the data we wanted to access.
+It was suggested that we start by implementing our product in a test environment. The ITS Network
+department was able to give us access to test development WAP's in a test network for the 
+purpose of working in a small scale environment and monitoring incase any security flags
+went off. We were able to obtain credentials to the WAP's in the test environment and use them
+to collect data.
+
+In order to move on to a larger scale environment such as larger public buildings, we would need
+to present our project to the next security meeting the department has and have it go through 
+other department figures.
+
+11/15/18
+
+Meet up with the department for some debugging issues. Discussed the data collection and 
+any concerns that may have been present.
+
+11/21/18
+
+Meet up with the department again to discuss the limitations of the data on the project side of things.
+
+//Updated as of 11/30/18
